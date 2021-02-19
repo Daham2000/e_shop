@@ -17,7 +17,7 @@ class _RootViewState extends State<RootView> {
 
   @override
   Widget build(BuildContext context) {
-    final rootBloc = BlocProvider.of<RootBloc>(context);
+    // final rootBloc = BlocProvider.of<RootBloc>(context);
     log.d("Loading Root View");
     CustomSnackBar customSnackBar;
 

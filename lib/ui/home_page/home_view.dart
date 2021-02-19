@@ -17,11 +17,35 @@ class _HomeViewState extends State<HomeView> {
     log.d("Loading Home View");
     CustomSnackBar customSnackBar;
     return Scaffold(
-      appBar: AppBar(
-        backwardsCompatibility: true,
+      appBar: new AppBar(
+        backgroundColor: Colors.redAccent,
+        title: Text("E-shop"),
+        actions: <Widget>[
+          new IconButton(
+              icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
+          new IconButton(
+              icon: Icon(Icons.shopping_cart, color: Colors.white),
+              onPressed: () {}),
+        ],
       ),
-      body: Text(
-        "Hello"
+      drawer: new Drawer(
+        child: new ListView(
+          children: <Widget>[
+            new UserAccountsDrawerHeader(
+              accountName: Text("John Cick"),
+              accountEmail: Text("daham@gmail.com"),
+              currentAccountPicture: GestureDetector(
+                child: new CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  child: Icon(Icons.person, color: Colors.white,),
+                ),
+              ),
+              decoration: new BoxDecoration(
+                color: Colors.deepOrange,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
