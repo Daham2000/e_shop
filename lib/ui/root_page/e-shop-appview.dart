@@ -12,7 +12,7 @@ class AppView extends StatelessWidget {
       title: "e-shop",
       theme: PrimaryTheme.generateTheme(context),
       home: RootView(),
-      // onGenerateRoute: Routes.genarator,
+      onGenerateRoute: Routes.generator,
     );
 
     // return MultiBlocProvider(providers: <BlocProvider>[

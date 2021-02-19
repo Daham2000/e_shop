@@ -30,6 +30,7 @@ dependencies:
   flutter_bloc: 6.1.1
   fcode_bloc: 0.5.13
   firebase_core: 0.5.2
+  fcode_common: 0.0.13
 
 dev_dependencies:
   flutter_test:
