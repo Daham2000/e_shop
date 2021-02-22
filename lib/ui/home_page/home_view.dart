@@ -1,3 +1,4 @@
+import 'package:e_shop/ui/widget/horizontal_listView.dart';
 import 'package:e_shop/util/assets.dart';
 import 'package:fcode_common/fcode_common.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ class _HomeViewState extends State<HomeView> {
     log.d("Loading Home View");
     CustomSnackBar customSnackBar;
     return Scaffold(
+      //appBar starts here
       appBar: new AppBar(
         title: Text("E-shop"),
         actions: <Widget>[
@@ -43,6 +45,8 @@ class _HomeViewState extends State<HomeView> {
           new IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {}),
         ],
       ),
+
+      //main drawer of app starts here
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -128,7 +132,19 @@ class _HomeViewState extends State<HomeView> {
         ),
       ),
       body: new ListView(
-        children: <Widget>[imageCarousel],
+        children: <Widget>[
+          //image Carousel starts here
+          imageCarousel,
+
+          // padding
+          new Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: new Text("Categories"),
+          ),
+
+          //Horizontal list view starts here
+          HorizontalList(),
+        ],
       ),
     );
   }
