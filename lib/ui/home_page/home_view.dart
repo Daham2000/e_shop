@@ -1,4 +1,5 @@
 import 'package:e_shop/ui/widget/horizontal_listView.dart';
+import 'package:e_shop/ui/widget/products.dart';
 import 'package:e_shop/util/assets.dart';
 import 'package:fcode_common/fcode_common.dart';
 import 'package:flutter/material.dart';
@@ -144,6 +145,18 @@ class _HomeViewState extends State<HomeView> {
 
           //Horizontal list view starts here
           HorizontalList(),
+
+          // padding
+          new Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: new Text("Recent products"),
+          ),
+
+          //grid view recent products
+          Container(
+            height: 280.0,
+            child: Products(),
+          )
         ],
       ),
     );

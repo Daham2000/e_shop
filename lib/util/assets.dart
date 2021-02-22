@@ -9,4 +9,9 @@ abstract class Assets {
   static const CATEGORY_PANTS = "assets/img/p.png";
   static const CATEGORY_DRESS = "assets/img/dress.png";
   static const CATEGORY_SHOES = "assets/img/s.png";
+  static const PRODUCTS_SHOES = "assets/img/products/shoesRed.jpg";
+  static const PRODUCTS_T_SHIRT_BLACK =
+      "assets/img/products/mens-black-plain-t-shirt-500x500.jpg";
+  static const PRODUCTS_WHITE_T_SHIRT = "assets/img/products/whiteTshirt.png";
+  static const PRODUCTS_BEST_FORMAL = "assets/img/products/formal.jpg";
 }
